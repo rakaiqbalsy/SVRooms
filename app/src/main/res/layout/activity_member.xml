@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bso.informatika.svrooms.MemberActivity"
+    tools:context="com.bso.informatika.svrooms.Dashboard.MemberActivity"
     android:background="#fcfefc">
 
     <android.support.design.widget.AppBarLayout
@@ -67,10 +67,18 @@
                 android:textColor="#000"/>
 
             <Button
-                android:id="@+id/buttoncari"
+                android:id="@+id/buttoncarirumah"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Cari Kamar"
+                android:text="Cari Rumahmu"
+                android:backgroundTint="@color/colorAccent"
+                />
+
+            <Button
+                android:id="@+id/buttoncariapartemen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cari Apartement"
                 android:backgroundTint="@color/colorAccent"
                 />
 

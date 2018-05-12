@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bso.informatika.svrooms.MemberActivity"
+    tools:context="com.bso.informatika.svrooms.Dashboard.MemberActivity"
     android:background="#fcfefc">
 
     <android.support.design.widget.AppBarLayout
@@ -74,7 +74,7 @@
                 android:backgroundTint="@color/colorAccent"/>
 
             <Button
-                android:id="@+id/buttoncari"
+                android:id="@+id/button_upload"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="UPLOAD KAMAR"

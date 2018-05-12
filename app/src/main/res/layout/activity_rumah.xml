@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bso.informatika.svrooms.activities.RumahActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/ApppbarRumah">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/collapsingToolbarRumah"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:title="House"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="50dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/loading_shape"
+                    android:id="@+id/aa_thubnail"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Rumah"
+                        android:textSize="18sp"
+                        android:textColor="#fff"
+                        android:id="@+id/aa_idRumah"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="category"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+                        android:id="@+id/aa_idcategory"
+                        android:textStyle="italic"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:id="@+id/aa_rating"
+                        android:textStyle="bold"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/rating_background"
+                        android:textColor="#fff"
+                        android:drawableLeft="@drawable/ic_star_black_24dp"
+                        android:paddingRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perusahaan"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/aa_idperusahaan"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="143dp"
+                android:padding="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="harga"
+                    android:textSize="16dp"
+                    android:id="@+id/aa_harga"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="alamat"
+                    android:textSize="16dp"
+                    android:id="@+id/aa_alamat"/>
+
+            </LinearLayout>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/aa_description"
+            android:text="Deskripsi"/>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.bso.informatika.svrooms.Detail.DetailActivity">
+
+    <ScrollView
+        android:id="@+id/scrollDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Datarumah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data Rumah"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/formIdRuangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Datarumah">
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="IdRoom"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/idRuangan"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/formDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formIdRuangan">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Deskripsi"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/idDeskripsi"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/formAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formDeskripsi">
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Alamat"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/idAlamat"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/formHarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formAlamat">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Harga"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/idHarga"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_below="@id/formHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Pilih Gambar"
+                android:id="@+id/uploadImage"
+                android:backgroundTint="@color/colorPrimaryDark"/>
+
+            <ProgressBar
+                android:id="@+id/progressupload"
+                android:layout_below="@id/uploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+            
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_below="@id/progressupload"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                />
+
+            <Button
+                android:id="@+id/simpandata"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Simpan data"
+                android:gravity="center"
+                android:layout_below="@id/imageView"
+                android:backgroundTint="@color/colorPrimaryDark" />
+
+
+        </RelativeLayout>
+       </ScrollView>
+
+</LinearLayout>
